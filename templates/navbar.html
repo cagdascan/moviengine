@@ -1,0 +1,30 @@
+<template name="navbar">
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Moviengine</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="{{explore1Path}}">Explore.v1</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+          <div class="pull-right" style="margin-right:100px;">
+          
+            {{loginButtons}}
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</template>

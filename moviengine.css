@@ -1,0 +1,124 @@
+/* CSS declarations go here */
+body {padding-top:60px;font-family:Arial !important;}
+.nav-tabs > li > a {font-weight:bold;}
+
+.well{
+  padding:0px;margin-bottom:0px !important;
+}/* ben koydum gecici olarak sonra sil bunu */
+.birim_eleman {
+  width:100%;
+  float:left;
+  border-bottom:1px solid #ddd;
+  padding:20px 0;
+  position:relative;
+}
+.birim_eleman .label {
+  padding:9px 11px;
+  height:14px;
+  cursor:default;
+  font-size:14px;
+  font-weight:normal;
+  margin:0 1px 1px 0;
+  float:left;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+  text-shadow: 0px 0px 0px #ffffff !important;
+}
+.birim_eleman p {
+  width:100%;
+  float:left;
+  margin:0 0 0px;
+}
+.birim_eleman .label-gri {background:#f4f4f4;color:#333;text-shadow:0px -1px 0px #fff;}
+.birim_eleman img {
+  width:100%;
+  height:auto;
+  float:left;
+}
+
+.birim_eleman h2 {
+  width: 100%;
+  float: left;
+  margin: 0;
+  font-size: 25px;
+  line-height: 1;
+  padding: 0 0 8px;
+}
+.birim_eleman h2 a {color:#000 !important;}
+
+.birim_eleman h2 a:hover { text-decoration:none !important;color:#438bc5 !important;}
+.birim_eleman 
+.birim_eleman i {  height:14px !important; margin-top:0 !important; }
+.birim_eleman .year {
+  font-weight:normal !important;
+  color: #aaa;
+  display:inline-block;
+}
+
+.filterbuttons {
+  float: left;
+  width: 96%;
+  padding:2%;
+  background:#f8f8f8;
+  border-bottom:1px solid #ddd;
+}
+.filterbuttons .btn {
+  font-family:Arial !important;
+  font-size:11px !important;
+  font-weight:bold !important;
+  margin:0 3px 5px 0;}
+.filterdesc {
+font-size: 14px;
+float: left;
+width: 120px;
+line-height: 30px;
+font-weight: bold;
+}
+.slider-contain {
+  display:inline-block;
+  height:30px;
+}
+.engine-birim {
+  display:block;
+  width:47%;
+  background:#f8f8f8;
+  height:auto;
+  float:left;
+  margin-bottom:20px;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #ddd;
+  
+}
+.birim_eleman:hover .interact-group {
+    display: inherit !important;
+    margin-top:5px !important;
+}
+.interact-group {
+  display:none !important;
+  margin-top:5px !important;
+}
+.interact {
+padding: 10px 0px !important;
+margin-right: 10px;
+line-height: 14px !important;
+min-width: 40px;
+  cursor:pointer;
+}
+.birim_eleman .imdbrating {
+  color: #000;text-shadow: 0 0;background: #f3ce00;font-size: 18px;font-weight:bold;
+}
+.birim_eleman img {
+-webkit-border-radius: 1px;
+-moz-border-radius: 1px;
+border-radius: 1px;
+}
+
+/* LOGIN ALANI ADD TO ORIGINAL*/
+#login-dropdown-list {
+  right:8px !important;
+  top:40px !important;
+  left:none !important;
+}
+/* LOGIN FORM ENDS*/
+

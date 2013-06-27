@@ -1,0 +1,85 @@
+<template name="birim_eleman">
+  {{#if moviesLoaded}}
+    {{#each item}}
+  <div class="row-fluid birim_eleman">
+    <div class="span3">
+      <img src="http://www.bayez.biz/linkedinner/movposdb/{{_id}}_poster.jpg" class="img-rounded" />
+    </div>
+       
+    <div class="span9"> 
+      <h2><a href="/{{_id}}">{{name}}&nbsp;<div class="year">{{date}}</div></a></h2>
+      <p>
+        <span class="label label-warning imdbrating" rel="tooltip" data-toggle="tooltip" data-placement="top" title="IMDb Rating">
+          {{userRating}}
+        </span>
+        {{#each genres}}
+          <span class="label label-info">
+            {{this}}
+          </span>
+        {{/each}}
+
+        <span class="label">117 min</span> 
+        <span class="label">{{rating}}</span>
+      </p>
+      <p style="line-height:2.2;">
+        {{#each director}}
+        <span class="label label-important">{{this}} <i class="icon-bullhorn icon-white"></i></span>
+        {{/each}}
+        {{#each actors}}
+        <span class="label label-inverse">{{this}}</span>
+        {{/each}}
+      </p>
+      <p style="margin:5px 0;">{{plotS}}</p>
+
+       <p class="pull-right interact-group">{{> interact-group}}</p>
+
+
+    
+    </div>
+  </div>
+    {{/each}}
+  {{else}}
+    {{>spinner}}
+  {{/if}}
+</template>
+
+
+<template name="single-movie">
+  {{#each item}}
+  <div class="row-fluid birim_eleman">
+    <div class="span3">
+      <img src="http://www.bayez.biz/linkedinner/movposdb/{{_id}}_poster.jpg" class="img-rounded" />
+    </div>
+    <div class="span9"> 
+      <h2><a href="/{{_id}}">{{name}}&nbsp;<div class="year">{{date}}</div></a></h2>
+      <p>
+        <span class="label label-warning imdbrating" rel="tooltip" data-toggle="tooltip" data-placement="top" title="IMDb Rating">
+          {{userRating}}
+        </span>
+        {{#each genres}}
+          <span class="label label-info">
+            {{this}}
+          </span>
+        {{/each}}
+
+        <span class="label">117 min</span> 
+        <span class="label">{{rating}}</span>
+      </p>
+      <p style="line-height:2.2;">
+        {{#each director}}
+        <span class="label label-important">{{this}} <i class="icon-bullhorn icon-white"></i></span>
+        {{/each}}
+        {{#each actors}}
+        <span class="label label-inverse">{{this}}</span>
+        {{/each}}
+      </p>
+      <p style="margin:5px 0;">{{plotS}}</p>
+
+       <p class="pull-right interact-group">{{> interact-group}}</p>
+
+
+    
+    </div>
+  </div>
+    {{/each}}  
+</template>
