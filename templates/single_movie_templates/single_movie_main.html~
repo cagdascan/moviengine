@@ -1,0 +1,116 @@
+<template name="single_movie_main">
+  <style>
+    .movie_action {
+      display:block;
+      clear:both;
+      padding:10px;
+    }
+    .single_movie_main  {
+      clear:both;
+      display:block;
+      border-top:1px solid #fff;
+      border-bottom:1px solid #ddd;
+      background:#f8f8f8;
+    }
+    .single_movie_main .label {
+      font-size:14px;
+      padding: 10px 10px;
+      line-height: 1;
+      border-right: 1px solid #ddd;
+      font-weight: bold;
+      background:none;
+      color:#777;
+      text-shadow: 1px 1px #FFF;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+    
+    }
+    .single_movie_main .label:hover {
+      color:#438bc5;
+    
+    }
+    .single_movie_main .label span {
+      clear:both;
+      font-size:10px;
+      font-weight:normal;
+
+    
+    }
+    .single_movie_main .btn {
+      padding:4px 8px;
+      font-weight:bold;
+      font-size:14px;
+    }
+    
+  </style>
+
+	<h1 class="middle_heading"><b>Eternal Sunshine of the Spotless Mind</b> 2004</h1>
+
+	<div class="single_movie_main">
+	  <div class="label" rel="tooltip" data-toggle="tooltip" data-placement="top" title="1">
+	    8.4<br>
+	    <span>IMDb</span>
+	  </div>
+	  <a class="label" rel="tooltip" data-toggle="tooltip" data-placement="top" title="IMDb ting">
+	    10,048<br>
+	    <span>WATCHED</span>
+	  </a>
+	  <a class="label" rel="tooltip" data-toggle="tooltip" data-placement="top" title="IMDb ting">
+	    2,690<br>
+	    <span>LIKED</span>
+	  </a>
+	  <a class="label" rel="tooltip" data-toggle="tooltip" data-placement="top" title="IMD">
+	    Drama<br>
+	    <span>GENRE</span>
+	  </a>
+	  <a class="label" rel="tooltip" data-toggle="tooltip" data-placement="top" title="IM">
+	    Romance<br>
+	    <span>GENRE</span>
+	  </a>
+	  <a class="label" rel="tooltip" data-toggle="tooltip" data-placement="top" title="IMdsgsd">
+	    Sci-Fi<br>
+	    <span>GENRE</span>
+	  </a>
+	  <a class="label" rel="tooltip" data-toggle="tooltip" data-placement="top" title="IMjhvjD">
+	    108<br>
+	    <span>MINUTES</span>
+	  </a>
+	  <a class="label" rel="tooltip" data-toggle="tooltip" data-placement="top" title="IMDb ting">
+	    R<br>
+	    <span>RATED</span>
+	  </a>
+      </div>
+
+    <div class="single_movie_main movie_action">
+      <a class="btn"><i class="icon-plus" style="width:11px; heigth:14px;font-size:14px;"></i> Watchlist</a>
+	  <a class="btn"><i class="icon-eye-open"></i> Seen</a>
+	  <a class="btn"><i class="icon-heart"></i> Like</a>
+      <div class="ratingcontain">
+	<span>Your rating:</span>
+	<ul class="rating nostar">
+	  <li class="one"><a href="#" title="1 Star">1</a></li>
+	  <li class="two"><a href="#" title="2 Stars">2</a></li>
+	  <li class="three"><a href="#" title="3 Stars">3</a></li>
+	  <li class="four"><a href="#" title="4 Stars">4</a></li>
+	  <li class="five"><a href="#" title="5 Stars">5</a></li>
+	</ul>
+      </div>
+    </div>
+    <div class="single_movie_main movie_action">
+      <a class="btn btn-success">in Watchlist</a>
+      <a class="btn btn-success"><i class="icon-eye-open"></i> Seen</a>
+      <a class="btn btn-success"><i class="icon-heart"></i> Like</a>
+      <div class="ratingcontain">
+	<span>Your rating:</span>
+	<ul class="rating nostar">
+	  <li class="one"><a href="#" title="1 Star">1</a></li>
+	  <li class="two"><a href="#" title="2 Stars">2</a></li>
+	  <li class="three"><a href="#" title="3 Stars">3</a></li>
+	  <li class="four"><a href="#" title="4 Stars">4</a></li>
+	  <li class="five"><a href="#" title="5 Stars">5</a></li>
+	</ul>
+      </div>
+    </div>
+	
+</template>

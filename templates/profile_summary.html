@@ -1,95 +1,93 @@
 <template name="profile_summary">
 <style>
-  h3 {padding:0px !important;margin:0px !important;}
+	.profsum {
+		float:left;	width:100%;
+		padding:0;
+		margin:0;
+		font-family:'Open Sans Condensed', Arial;
+		text-align:center;
+		
+	}
+	.profsum .isim {
+		background:#444;
+		color:#eee;
+		font-size:20px;
+		text-align;center;
+		margin-bottom:1px;
+		float:left;
+		width:92%;
+		padding:4%;
+		cursor:pointer;
+		font-weight:bold;
+	}
+	.profsum .isim:hover {
+		background:#222 !important;
+		color:#fff;
+	}
+	.profsum ul {
+		float:left;
+		width:100%;
+		list-style-type:none;
+		padding:0;
+		margin:0;
+	}
+	.profsum ul li {
+		float:left;
+		width:89px;
+		margin:0px 0 1px;
+		height:auto;
 
-  .widget_menu {
-    width:100%;
-    display:block;
-    height:auto;
-    margin:0px 0 20px;
-    border:1px solid #e8e8e8;
-    background:#f9f9f9;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    float:left;
-  }
-  .widget_menu .top {
-    border-bottom:1px solid #e8e8e8;
-    display:block;
-    padding:10px;
+	}
+	.profsum li:nth-child(3n+2) {
+		margin:0px 1px 1px !important;
+		width:90px !important;
+	}
 
-    font-weight:bold;
-    cursor:pointer;
-    -webkit-border-top-left-radius: 5px;
-    -webkit-border-top-right-radius: 5px;
-    -moz-border-radius-topleft: 5px;
-    -moz-border-radius-topright: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  .widget_menu .top img {margin-right:10px;width:
-      -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;}
-  .widget_menu ul {
-    width:100%;
-    display:block;
-    margin:0;
-  }
-  .widget_menu li {
-    display:block;
-    width:33%;
-    float:left;
-    border-bottom:1px solid #e8e8e8;
-    
-  }
-  .widget_menu li a {
-    display:block;
-    float:left;
-    padding:7px 12px;
-    color:#333;
-    text-shadow:0px 1px 0 #fff;
-    font-size:14px;
-    font-weight:normal;
-    line-height:1;
-  }
-  .widget_menu li a:hover, .widget_menu li a:hover span {
-    color:#0084b4 !important;
-    text-decoration:none;
-  }
-  .widget_menu li a strong {
+	.profsum ul li a {
+		background:#49afcd !important;
+		color:#E7FAFF;
+		display:block;
+		padding:10px;
+		font-size:34px;
+		height:70px;
+		font-weight:bold;
+		line-height:1.2;
+		cursor:pointer;
+		text-decoration:none !important;
+	
+	}
+	.profsum ul li a:hover {
+		background:#2f96b4 !important;
+		color:#fff;
+	}
+	.profsum li:nth-child(5) a {
+		padding:0;
+	}
+	.profsum ul li a span {
+		display:block;
+		font-size:16px;
+		font-weight:normal;
+	
+	}
+	
+</style>
 
-    text-shadow:0px 1px 0 #fff;
-    font-size:14px;
-    line-height:1.2;
-}
-  .widget_menu li a span {
-    color:#999;
-    font-size:10px;
-  }
- 
-  </style>
-  <div class="widget_menu">
-    <a class="top"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc6/275188_793472619_1992574102_q.jpg"/><strong>Yavuz Süleyman Kirez</strong> </a>
-    <ul>
-      <li><a href=""><strong>120</strong><br><span>WATCHED</span></a></li>
-      <li><a href=""><strong>18</strong><br><span>WATCHLIST</span></a></li>
-      <li><a href=""><strong>44</strong><br><span>LIKED</span></a></li>
-      <li><a href=""><strong>28</strong><br><span>POSTS</span></a></li>
-      <li><a href=""><strong>27</strong><br><span>FOLLOWING</span></a></li>
-      <li><a href=""><strong>120</strong><br><span>FOLLOWERS</span></a></li>
-      <li><a href=""><strong>105</strong><br><span>VOTED</span></a></li>
-      <li><a href=""><strong>15</strong><br><span>NOT VOTED</span></a></li>
-    
+<div class="profsum">
+	<div class="isim">Yavuz Süleyman Kirez</div>
+	<ul>
+		<li><a href="{{seenPath}}">227<span>SEEN</span></a></li>
+		<li><a href="{{likedPath}}">68<span>LIKED</span></a></li>
+		<li><a href="{{ratedPath}}">126<span>RATED</span></a></li>
+		<li><a href="{{watchlistPath}}">8 in<span>WATCHLIST</span></a></li>
+		<li><a href="{{feedPath}}"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c21.21.259.259/s160x160/275188_793472619_1992574102_n.jpg"/>
+		
 
+		</a ></li>
+		<li ><a href="{{toratePath}}">45<span>TO RATE</span></a></li>
+		<li><a href="{{postsPath}}">74<span>POSTS</span></a></li>
+		<li><a href="{{followersPath}}">2071<span>FOLLOWERS</span></a></li>
+		<li><a href="{{followingPath}}">67<span>FOLLOWING</span></a></li>
+	</ul>
+</div>
 
- 
-
-
-
-       
-    
-    </ul>
-  </div>
 </template>

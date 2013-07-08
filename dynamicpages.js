@@ -8,6 +8,11 @@ if (Meteor.is_client) {
     '/': 'home',
     '/explore1': 'explore1',
     '/about': 'about',
-    '/singlemovie': 'singlemovie'
+	'/seen': 'seen',
+	'/watchlist': 'watchlist',
+	'/liked': 'liked',
+	'/rated': 'rated',
+    '/torate': 'torate',
+	'/singlemovie': 'singlemovie'
   });
 }

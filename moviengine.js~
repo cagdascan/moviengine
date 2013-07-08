@@ -30,11 +30,6 @@ if (Meteor.isClient) {
    $('span[rel=tooltip]').tooltip();
 
   };
-  Template.single_movie_main.rendered = function() {
-   $('a[rel=tooltip]').tooltip(); //initialize all tooltips in this template
-   $('span[rel=tooltip]').tooltip();
-
-  };
 }
 
 

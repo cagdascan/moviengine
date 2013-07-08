@@ -3,12 +3,15 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <div class="row-fluid">
-          <div class="span8">
-            {{> single_movie_get}}
-            {{> trailer}}
+        <div class="row">
+			<div class="span2">
+				{{> single_movie_left}}
+			</div>
+          <div class="span7">
+				{{> single_movie_main}}
+
           </div>
-          <div class="span4">
+          <div class="span3">
             {{> profile_summary}}
           </div>
         </div>

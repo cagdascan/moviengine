@@ -1,0 +1,26 @@
+<template name="tabgenre">
+    <div class="filterbuttons" data-toggle="buttons-check">
+        <button class="btn btn-success">ACTION</button>
+        <button class="btn">ADVENTURE</button>
+        <button class="btn">ANIMATION</button>
+        <button class="btn">BIOGRAPHY</button>
+        <button class="btn">COMEDY</button>
+        <button class="btn">CRIME</button>
+        <button class="btn">DOCUMENTARY</button>
+        <button class="btn">DRAMA</button>
+        <button class="btn">FAMILY</button>
+        <button class="btn">FANTASY</button>
+        <button class="btn">FILM-NOIR</button>
+        <button class="btn">HISTORY</button>
+        <button class="btn">HORROR</button>
+        <button class="btn">MUSIC</button>
+        <button class="btn">MUSICAL</button>
+        <button class="btn">MYSTERY</button>
+        <button class="btn">ROMANCE</button>
+        <button class="btn">SCI-FI</button>
+        <button class="btn">SPORT</button>
+        <button class="btn">THRILLER</button>
+        <button class="btn">WAR</button>
+        <button class="btn">WESTERN</button>
+    </div>
+</template>
